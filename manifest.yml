@@ -1,0 +1,9 @@
+---
+applications:
+  - name: gy-alarmservice
+    buildpack: java_buildpack
+    path: target/alarmservice-0.0.1-SNAPSHOT.jar
+    services:
+      - gy-postgres
+env:
+    db_service_name: gy-postgres
